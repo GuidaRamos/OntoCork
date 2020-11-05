@@ -8,7 +8,7 @@ This project stems from the organisation of knowledge in the specialised field o
 OntoCork is being developped in OWL. The formal definitions are based on natural language definitions drawn from CorkCorpus - a specialised corpus built from scratch.
 
 # Acknowledgements
-Work carried out in the context of a PhD project funded by the FCT - Fundação para a Ciência e Tecnologia (Portugal). Studentship no. PD/BD/113972/2015.
+Work carried out in the context of a PhD project funded by the [FCT](https://www.fct.pt/)- Fundação para a Ciência e Tecnologia (Portugal). Studentship no. PD/BD/113972/2015.
 
 # Publications
 Ramos. M., Costa, R. e Roche, C. (2020). [Dealing with specialized co-text in text mining: The verbal terminological collocations](http://ontologia.fr/TOTh/Conference/TOTh2019/TOTh_2019.pdf). Paper in Terminologica, Savoie et Connaissance, pp. 339 – 362. Chambéry : USMB. Magazine indexed to INIST (CNRS) – Institut de l’Information Scientifique et Technique (Centre National de la Recherche Scientifique).

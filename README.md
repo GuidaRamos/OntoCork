@@ -1,5 +1,5 @@
 # OntoCork
-OntoCork is a micro domain-ontology of cork stoppers - an object that is considered the backbone of the chain of production in the Portuguese industry of cork.
+OntoCork is a micro domain-ontology of cork stoppers. These manufactured objects are considered the backbone of the Portuguese industry of cork.
 
 The purpose of this domain-ontology is primarily to organise concepts denoting the real-world object designated by the term “cork stopper”, in a systematic way, depending on the type of substance the object is made of, its function, shape and parts. The substance the object is made of plays a central role: concepts are hierarchically systematised according to their composition, in the sense of substance (raw material). The ultimate purpose of the ontology is to organise the operations intervening in the manufacturing process of the objects – the “cork stoppers” – depending on the purpose of each operation in order to obtain a classification of each object. Finally, this classification aims at providing information on the manufacturing stage of the object regarding its stage of completion within the manufacturing process. 
 

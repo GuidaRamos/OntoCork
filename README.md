@@ -15,7 +15,7 @@ Ramos. M., Costa, R. and Roche, C. (2020). [Dealing with specialized co-text in 
 
 Ramos, M. and Costa, R. (2018). [Semantic analyses of texts for eliciting and representing concepts: the TermCork project](https://hal.archives-ouvertes.fr/hal-02140061). Terminologica, Savoie et Connaissance, 9-10 June, pp. 167-199, ISBN : 978-2919732-82-1. Magazine indexed to INIST (CNRS) – Institut de l’Information Scientifique et Technique (Centre National de la Recherche Scientifique).
 
-Ramos, M. and Costa, R. (2018). Terminologia para a organização do conhecimento: Projecto TermCork. Comunication at the [first session](https://www.evensi.pt/cork-talks-fcsh-universidade-nova-lisboa/243574245) of the “Cork Talks”, held at the NOVA FCSH. Organization:  TheCorkMarketProject.com and FCSH – Universidade NOVA de Lisboa.
+Ramos, M. and Costa, R. (2018). Terminologia para a organização do conhecimento: Projecto TermCork. Comunication at the [first session of the “Cork Talks”]((https://www.evensi.pt/cork-talks-fcsh-universidade-nova-lisboa/243574245), held at the NOVA FCSH. Organization:  TheCorkMarketProject.com and FCSH – Universidade NOVA de Lisboa.
 Lisbon, 31-01-2018
 
 Ramos, M. (2015). O valor das definições para a organização conceptual da rolha da cortiça: uma questão de terminologia. Ma thesis. [RUN](https://run.unl.pt/handle/10362/19582).

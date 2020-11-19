@@ -1,0 +1,3025 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.clunl.fcsh.unl.pt/OntoCork"
+     xml:base="http://www.clunl.fcsh.unl.pt/OntoCork"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:OntoCork="http://www.clunl.fcsh.unl.pt/OntoCork#"
+     xmlns:ontodebug="http://ainf.aau.at/ontodebug#"
+     xmlns:hasDiscsGluedOnTop1="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop1&amp;"
+     xmlns:hasDiscsGluedOnTop2="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop2&amp;">
+    <owl:Ontology rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork">
+        <rdfs:comment xml:lang="en">OntoCork is a micro domain-ontology of cork stoppers according to their structure, substance, function, shape and finishing treatments, within the scope of the transformation sector in the industry of cork. 
+
+ This ontology seeks to respond to two typologies: 
+(1) the type of cork stopper compared to the type of cork (raw material) with which it is produced; and
+(2) the typology of operations that belong to the finishing processes.
+Finally, this ontology should also respond to the state of completion – in the sense of finished product – of the cork stopper, depending on the last operation to which it was submitted.
+
+OntoCork is developped in OWL.
+
+This work is licensed under a Creative Commons Attribution 4.0 International License: https://creativecommons.org/licenses/by/4.0/
+
+Funding provided by the FCT (Fundação para a Ciência e Tecnologia, Portugal) through a PhD scholarship from Jan 2016 - Dec 2019.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#axiom -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#axiom">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#testCase -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#testCase"/>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#type -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#type">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creationDate"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#NaturalLanguageDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#NaturalLanguageDefinition"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#Source"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#context -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#context"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#fullConceptName -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#fullConceptName"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#partOfSpeech -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#partOfSpeech"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#term -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#term"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#NaturalLanguageDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#NaturalLanguageDefinition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#context -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#context"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#equivalentTerm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#equivalentTerm"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#fullConceptName -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#fullConceptName"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#label"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#partOfSpeech -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#partOfSpeech"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#term -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#term"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/image -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/image"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasBrandMark -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasBrandMark">
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasChamferingOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasChamferingOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeRectification"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#EdgeChamferingOperation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasCorkGranules -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasCorkGranules">
+        <rdfs:comment xml:lang="en">Generic relation used to subsume relations that correspond to differential characteristics. With the latter, we can differentiate subtypes of &lt;TechnicalCorkStopperN+N&gt;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasCostumizationTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasCostumizationTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinalFinishingProcess"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CostumizationTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasDiameterRectification -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiameterRectification">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDimensionRectification"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#DiameterRectification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasDimensionRectification -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasDimensionRectification">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSemi-finishingProcess"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#DimensionalRectification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeElement"/>
+        <rdfs:comment xml:lang="en">Relation to complement the relation &quot;hasStructure&quot;
+and express the value of [PART] from the PARTITIVE relation [PART-WHOLE],
+at the level of Class Restriction.
+
+domain: TechnicalCorkStopperN+N range: ShapeElement to caracterise Individuals accordingly</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasFinalFinishingProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinalFinishingProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinalFinishingProcesses"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasFineCorkGranules -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasFineCorkGranules">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasCorkGranules"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Substance"/>
+        <rdfs:comment xml:lang="en">Relation that corresponds to a differential characteristic.
+This DC allows us to differentiate &lt;TechnicalCorkStopper1+1&gt; from &lt;TechnicalCorkStopper0+2&gt; at the Class restriction level.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+        <rdfs:comment xml:lang="en">Generic relation subsuming all types of relations to reason about treatments and operations that an indivual (cork stopper) may be submited to.
+
+All subtypes of relations have the domain and range set to follow the hierarchy of &lt;FinishingProcesses&gt;, i.e. 
+
+1. domain: CorkStopper range: FinishingProcesses is set as a generic relation restriction for the owl:hasFinishingProcess; 
+2. domain: Semi-finishedCorkStopper range: Semi-finishingProcesses is set  as a relation restriction for all subtypes of owl:hasSemi-finishingProcess;
+3. domain: FinishedCorkStopper range: FinalFinishingProcesses is set as a relation restriction for all subtypes of owl:hasFinalFinishingProcess.
+
+This option permits to classify an individual (cork stopper) according to the stage of manufacture.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation used to express the conceptual relation [PROCESS-RESULT] and corresponds to one of the 5 axes od analysis of the ontology.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasFireMark -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasFireMark">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasBrandMark"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasFireMarkingOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasFireMarkingOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasCostumizationTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkinOperation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Function"/>
+        <rdfs:comment xml:lang="en">One of the 5 axes of analysis of this ontology.
+
+Relation that corresponds to a differential characteristic (e.g., /forStillWines/ ). Furthermore, it allows us to differentiate concepts that are similar according to their structure, e.g. &lt;TechnicalCorkStopper1+1&gt; and &lt;TechnicalCorkStopper2+2&gt;</rdfs:comment>
+        <rdfs:label xml:lang="pt">hasFunction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMark -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMark">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasBrandMark"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMarkingOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMarkingOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasCostumizationTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkingOperation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasLargeCorkGranules -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasLargeCorkGranules">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasCorkGranules"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Substance"/>
+        <rdfs:comment xml:lang="en">Relation that corresponds to a differential characteristic.
+This DC allows us to differentiate &lt;TechnicalCorkStopper0+2&gt; from &lt;TechnicalCorkStopper1+1&gt; and &lt;TechnicalCorkStopper2+2&gt; at the Class restricgtion level</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasLengthRectification -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasLengthRectification">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDimensionRectification"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#LengthRectification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasLenticelsColmationOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasLenticelsColmationOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasQualityTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#LenticelsColmation"/>
+        <rdfs:comment xml:lang="en">Lenticels colmation occurs uniquely with kinds of &lt;NaturalCorkStopper&gt;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasParaffinationOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasParaffinationOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceCoatingTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceParaffination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasQualityTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasQualityTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#QualityTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasRoundingOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasRoundingOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeRectification"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#EdgeRoundingOperation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSanitizationTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSanitizationTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SanitationTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSemi-finishingProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSemi-finishingProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Shape"/>
+        <rdfs:comment xml:lang="en">One of the 5 axes of analysis of this ontology.</rdfs:comment>
+        <rdfs:label xml:lang="pt">hasShape</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:comment xml:lang="en">Relation used to describe Individuals.
+Depending on the domain expressed, namely &lt;FinishedStopper&gt; or &lt;Semi-finishedStopper&gt;, the Individual will be inferred accordingly. Each operation occurs on a specific location of the &lt;CorkStopper&gt; and pertains to either the extension of &lt;Semi-FinishingProcesses&gt; or to the extension of &lt;FinishingProcesses&gt;, thus allowing the classification of the manufacturing status.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElementEdge -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElementEdge">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElement"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Shape"/>
+        <rdfs:comment xml:lang="en">set to domain: Semi-finishedStopper,
+because &lt;CorkStoppers&gt; get edge shape rectification during the semi-finished stage.
+
+
+The object property :hasShapeElementEdge was created as a subclass of :hasShapeElement. The latter was initially a subclass of :hasShape in order to describe the value of  &lt;Edge&gt;, such as &lt;rounded&gt;, which in turn is expressed as a member in the enumeration for &lt;Shape&gt;. However, we decided to update this object property :hasShapeElement is not a subclass of :hasShape but a sub-class of topObjectProperty</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElementLateralSurface -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElementLateralSurface">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElementTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElementTop">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeRectification -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasShapeRectification">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDimensionRectification"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeRectification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSiliconizationOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSiliconizationOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceCoatingTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceSiliconization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+        <rdfs:comment xml:lang="en">One of the 5 axes of analysis of this ontology.
+
+Relation used to express the PARTITIVE relation [PART-WHOLE], 
+at the level of Class Restriction.
+
+domain: CorkStopper Range: Part = {Body; Disc}</rdfs:comment>
+        <rdfs:label xml:lang="pt">hasStructure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceCoatingTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceCoatingTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinalFinishingProcess"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceCoatingTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceSandingOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceSandingOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiameterRectification"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceSandingOperation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSemi-finishingProcess"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceWashing -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceWashing">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSanitizationTreatment"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceWashing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasTopPolishingOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasTopPolishingOperation">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasLengthRectification"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#TopPolishingOperation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#isEntirelyMadeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#isEntirelyMadeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Substance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Substance"/>
+        <rdfs:comment xml:lang="en">Generic relation to express the associative relation [PRODUCT-RAW MATERIAL]
+
+it corresponds to one of the 5 axis of analysis, more specifically &apos;has_substance&apos;</rdfs:comment>
+        <rdfs:label xml:lang="pt">isMadeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#isPartiallyMadeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#isPartiallyMadeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper"/>
+        <rdfs:range rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Substance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasCorkGranulesValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasCorkGranulesValue">
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasCorkGranulesValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop2Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop2Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedValue"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop2Value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedValue">
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasEdgeElementShapeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasEdgeElementShapeValue">
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasFireMarkDesignValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasFireMarkDesignValue">
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMarkDesignValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMarkDesignValue">
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceLenticelsValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceLenticelsValue">
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop1&amp;Top2Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop1&amp;Top2Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedValue"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop1&amp;Top2Value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop2&amp;Top1Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop2&amp;Top1Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedValue"/>
+        <rdfs:domain rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs2+2"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscsGluedOnTop2&amp;Top1Value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isPartiallyMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isPartiallyMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:onClass>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">AgglomeratedCorkBodyWithNaturalCorkDiscs</rdfs:label>
+        <skos:altLabel xml:lang="en">mixed cork stopper</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha composta</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha mista</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha n+n</skos:altLabel>
+        <skos:altLabel xml:lang="en">stopper n+n</skos:altLabel>
+        <skos:definition xml:lang="fr">bouchon formé par un corps de liège aggloméré et «n» disques de liège naturel collés à une ou aux deux extrémités
+N.B .: Dans cette désignation, «n» indique le nombre de disques utilisés.</skos:definition>
+        <skos:definition xml:lang="pt">rolha formada por um corpo de cortiça aglomerada e “n” discos de cortiça natural colados num ou em ambos os topos
+Nota: Nesta designação, “n” indica o número de discos utilizados.</skos:definition>
+        <skos:definition xml:lang="en">stopper formed by a body of agglomerate cork and “n” disks of natural cork glued at one or both ends
+N.B.: In this designation, “n” indicates the number of disks used.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon technique N+N</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha técnica N+N</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">technical cork stopper N+N</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon formé par un corps de liège aggloméré et «n» disques de liège naturel collés à une ou aux deux extrémités
+N.B .: Dans cette désignation, «n» indique le nombre de disques utilisés.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">rolha formada por um corpo de cortiça aglomerada e “n” discos de cortiça natural colados num ou em ambos os topos
+Nota: Nesta designação, “n” indica o número de discos utilizados.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: CorkCorpus | 5.5 – NORM</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">stopper formed by a body of agglomerate cork and “n” disks of natural cork glued at one or both ends
+N.B.: In this designation, “n” indicates the number of disks used.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForSparklingWines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShape"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isEntirelyMadeOf"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">AgglomeratedCorkStopper</rdfs:label>
+        <skos:definition xml:lang="fr">Bouchon obtenu par l&apos;agglutination de granulés de liège d&apos;une taille comprise entre 0,25 mm et 8 mm, avec addition de liants, par extrusion ou moulage et composé d&apos;au moins 51% en poids de granulés de liège.</skos:definition>
+        <skos:definition xml:lang="pt">Rolha obtida pela aglutinação de granulado de cortiça com dimensão compreendida entre 0,25mm e 8mm, com adição de ligantes, através de extrusão ou moldagem e composta, pelo menos, por 51 % de granulado de cortiça, em peso.</skos:definition>
+        <skos:definition xml:lang="en">Stopper obtained by the agglutination of cork granules with a size between 0,25 mm and 8 mm, with addition of binders, by means of extrusion or moulding and composed of at least 51% by weight of cork granules.</skos:definition>
+        <skos:prefLabel xml:lang="en">agglomerated cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">bouchon de liège aggloméré</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça aglomerada</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">Bouchon obtenu par l&apos;agglutination de granulés de liège d&apos;une taille comprise entre 0,25 mm et 8 mm, avec addition de liants, par extrusion ou moulage et composé d&apos;au moins 51% en poids de granulés de liège.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Rolha obtida pela aglutinação de granulado de cortiça com dimensão compreendida entre 0,25mm e 8mm, com adição de ligantes, através de extrusão ou moldagem e composta, pelo menos, por 51 % de granulado de cortiça, em peso.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: CorkCorpus | 5.5 – NORM</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Stopper obtained by the agglutination of cork granules with a size between 0,25 mm and 8 mm, with addition of binders, by means of extrusion or moulding and composed of at least 51% by weight of cork granules.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#BrandDesign -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#BrandDesign">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FireMark"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#InkMark"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#WashedMono-pieceNaturalCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasChamferingOperation"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#EdgeChamferingOperation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <rdfs:comment xml:lang="en">Issue:
+This concept is not classified as a &lt;Semi-FinishedCorkStopper&gt;.
+All concepts described with 2 types of &lt;Semi-FinishingProcess&gt; are not inferred accordingly.
+The same is observed on concepts described with 2 types of &lt;FinalFinishingProcess&gt; -- see concept &lt;FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">ChamferedWashedMono-pieceNaturalCorkStopper</rdfs:label>
+        <skos:altLabel xml:lang="pt">rolha natural chanfrada</skos:altLabel>
+        <skos:definition xml:lang="en">Cork stopper entirely made of amadia cork that was sumitted to the &lt;EdgeChamferingOperation&gt;.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon de liège naturel chanfreiné</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">chamfered natural cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça natural chanfrada</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">ChamferedWashedMono-pieceNaturalCorkStopper</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">&lt;ChamferedNaturalCorkStopper&gt; serves to describe a &lt;Semi-finishedStopper&gt; with &lt;DimensionalRectification&gt;.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Cork stopper entirely made of amadia cork that was sumitted to the &lt;EdgeChamferingOperation&gt;.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Author - our proposal of definition</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon de liège naturel chanfreiné</owl:annotatedTarget>
+        <skos:note xml:lang="fr">Dans le discours de spécialité, le spécialiste ne verbalize pas toutes les opérations (traitements) auxquelles le bouchon a été soumis, à l&apos;exception de la dernière opération qui a eu lieu. Notre proposition dans ce cas, est d&apos;énoncer  &lt;Chanfreinage&gt;, à l&apos;exception de &lt;Lavage&gt;, dans la forme du terme.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="en">chamfered natural cork stopper</owl:annotatedTarget>
+        <skos:note xml:lang="en">In specialised discourse context, the expert does not verbalise all the operations (treatments) that the cork stopper was submitted to, with the exception of the last operation that occurred. Our proposal for this case, is to explicit &lt;Chamfering&gt; but not &lt;Washing&gt;, in the term&apos;s form.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="pt">rolha de cortiça natural chanfrada</owl:annotatedTarget>
+        <skos:note xml:lang="pt">Em contexto de discurso de especialidade, o especialista não verbaliza todas as operações (tratamentos) a que a rolha foi submetida, à excepção da última operação que ocorreu. Propomos para este caso, enunciar &lt;Chanframento&gt;, mas não &lt;Lavação&gt;, na forma do termo.</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Closure -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Closure">
+        <rdfs:comment xml:lang="pt">O conceito &lt;Vedante&gt; serve para indentificar o conceito &quot;proximum genus&quot; do conceito de &lt;Rolha de cortiça&gt;.
+Na fórmula aristotélica (X=Y+DC), ocupa o lugar o lugar do Y.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The concept &lt;Closure&gt; is used to assign the &apos;proximum genus&apos; concept of &lt;Cork stopper&gt;.
+It takes the place of Y, In the Aristothelian formulae (X = Y + DC).</rdfs:comment>
+        <rdfs:label xml:lang="en">Closure</rdfs:label>
+        <skos:prefLabel xml:lang="en">closure</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">fermeture</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">vedante</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#WashedMono-pieceNaturalCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasLenticelsColmationOperation"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#LenticelsColmation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceWashing"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceWashing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ColmatedWashedMono-pieceNaturalCorkStopper</rdfs:label>
+        <skos:altLabel xml:lang="fr">bouchon colmaté</skos:altLabel>
+        <skos:altLabel xml:lang="en">colmated cork stopper</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha colmatada</skos:altLabel>
+        <skos:definition xml:lang="fr">bouchon fait en liège naturel soumis à l&apos;opération de &lt;Colmatage&gt;</skos:definition>
+        <skos:definition xml:lang="pt">rolha feita de cortiça natural submetida a operação de &lt;Colmatagem&gt;</skos:definition>
+        <skos:definition xml:lang="en">stopper made of natural cork submitted to the operation of &lt;Colmation&gt;</skos:definition>
+        <skos:isDefinedBy xml:lang="pt">A rolha de cortiça natural colmatada é uma rolha feita de cortiça natural em que são obturadas as suas lenticelas com uma mistura de colas e pó de cortiça proveniente dos acabamentos dimensionais das rolhas de cortiça natural.</skos:isDefinedBy>
+        <skos:prefLabel xml:lang="fr">bouchon en liège naturel colmaté</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">colmated natural cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça natural colmatada</skos:prefLabel>
+        <foaf:image rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"></foaf:image>
+        <foaf:image rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.apcor.pt/wp-content/uploads/2015/09/colmatada.jpg</foaf:image>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">rolha feita de cortiça natural submetida a operação de &lt;Colmatagem&gt;</owl:annotatedTarget>
+        <foaf:isPrimaryTopicOf rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.lexonomy.eu/k4ysn6um/edit/entry/</foaf:isPrimaryTopicOf>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#isDefinedBy"/>
+        <owl:annotatedTarget xml:lang="pt">A rolha de cortiça natural colmatada é uma rolha feita de cortiça natural em que são obturadas as suas lenticelas com uma mistura de colas e pó de cortiça proveniente dos acabamentos dimensionais das rolhas de cortiça natural.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: Cork Corpus | 6.1 – REP</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon en liège naturel colmaté</owl:annotatedTarget>
+        <skos:note xml:lang="fr">Dans le discours de spécialité, le spécialiste ne verbalize pas toutes les opérations (traitements) auxquelles le bouchon a été soumis, à l&apos;exception de la dernière opération qui a eu lieu. Dans ce cas, &lt;Colmatage&gt; est énoncé, mais &lt;Lavage&gt; ne l&apos;est pas.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="en">colmated natural cork stopper</owl:annotatedTarget>
+        <skos:note xml:lang="en">In specialised discourse context, the expert does not verbalise all the operations (treatments) that the cork stopper was submitted to, with the exception of the last operation that occurred. In this case, &lt;Colmation&gt; is explicit but not &lt;Washing&gt;.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="pt">rolha de cortiça natural colmatada</owl:annotatedTarget>
+        <skos:note xml:lang="pt">Em contexto de discurso de especialidade, o especialista não verbaliza todas as operações (tratamentos) a que a rolha foi submetida, à excepção da última operação que ocorreu. Neste caso, a &lt;Colmatação&gt; está enunciada, mas não &lt;Lavação&gt;.</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Closure"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Shape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Substance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The axiom construct :
+(not (FinishingProcesses)) or (hasFinishingProcess some FinishingProcesses)
+
+allows us to separate two types of cork stoppers:
+1. with &lt;FinishingProcesses&gt;
+1.a) with &lt;Semi-finishingProcesses&gt;
+1.b) with &lt;Final finishingProcesses&gt;
+2. without  &lt;FinishingProcesses&gt;
+
+Thus, cork stoppers described with the intersection of Point 1 or  Point 2 
+are classified according to 3 stages of manufacture:
+
+1.a) semi-finished
+1.b) finished
+2. semi-manufactured</rdfs:comment>
+        <rdfs:label xml:lang="en">CorkStopper</rdfs:label>
+        <skos:definition xml:lang="fr">Morceau de liège, généralement cylindrique, tronconique ou prismatique-quadrangulaire, parfois à bords latéraux arrondis ou chanfreinés, constitué d&apos;un ou plusieurs éléments collés et destiné à sceller les récipients ou à contribuer à leur étanchéité</skos:definition>
+        <skos:definition xml:lang="pt">Peça de cortiça, em geral cilíndrica, troncocónica ou prismática quadrangular, por vezes de arestas laterais boleadas ou chanfradas, constituída por um ou vários elementos colados e destinada a vedar os recipientes ou a contribuir para a sua estanquicidade</skos:definition>
+        <skos:definition xml:lang="en">Piece of cork, generally cylindrical, frusto-conical or prismatic-quadrangular, sometimes with rounded or chamfered side edges, consisting of one or more glued elements and intended to seal the containers or contribute to their tightness</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon de liège</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">Morceau de liège, généralement cylindrique, tronconique ou prismatique-quadrangulaire, parfois à bords latéraux arrondis ou chanfreinés, constitué d&apos;un ou plusieurs éléments collés et destiné à sceller les récipients ou à contribuer à leur étanchéité</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Peça de cortiça, em geral cilíndrica, troncocónica ou prismática quadrangular, por vezes de arestas laterais boleadas ou chanfradas, constituída por um ou vários elementos colados e destinada a vedar os recipientes ou a contribuir para a sua estanquicidade</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: Cork corpus | 7.6 – TECH</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Piece of cork, generally cylindrical, frusto-conical or prismatic-quadrangular, sometimes with rounded or chamfered side edges, consisting of one or more glued elements and intended to seal the containers or contribute to their tightness</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal transaltion from PT</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#CostumizationTreatment -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CostumizationTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinalFinishingProcesses"/>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceCoatingTreatment"/>
+        <rdfs:label xml:lang="en">CostumizationTreatment</rdfs:label>
+        <skos:altLabel xml:lang="en">branding</skos:altLabel>
+        <skos:altLabel xml:lang="pt">marcação</skos:altLabel>
+        <skos:prefLabel xml:lang="en">costumization treatment</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">traitement de costumisation</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">tratamento de costumização</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#DiameterRectification -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#DiameterRectification">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#DimensionalRectification"/>
+        <rdfs:label xml:lang="en">DiameterRectification</rdfs:label>
+        <skos:prefLabel xml:lang="en">diameter rectification</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">rectification du diametre</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rectificação do diâmetro</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#DimensionalRectification -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#DimensionalRectification">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses"/>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceTreatment"/>
+        <rdfs:label xml:lang="en">DimensionalRectification</rdfs:label>
+        <skos:prefLabel xml:lang="en">dimensional rectification</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">rectification dimensionelle</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rectificação dimensional</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#EdgeChamferingOperation -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#EdgeChamferingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeRectification"/>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#EdgeRoundingOperation"/>
+        <rdfs:label xml:lang="en">EdgeChamferingOperation</rdfs:label>
+        <skos:prefLabel xml:lang="en">chamfering</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">chanframento</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">chanfreinage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#EdgeRoundingOperation -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#EdgeRoundingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeRectification"/>
+        <rdfs:label xml:lang="en">EdgeRoundingOperation</rdfs:label>
+        <skos:prefLabel xml:lang="fr">arrondissement</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">boleamento</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">rounding</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#FinalFinishingProcesses -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FinalFinishingProcesses">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses"/>
+        <rdfs:comment xml:lang="pt">1. Este conceito serve para representar as relações conceptuais associativas [PROCESS-RESULT].
+2. Processos de acabamento final da fabricação da rolha de cortiça.</rdfs:comment>
+        <rdfs:comment xml:lang="en">1.This concept serves to model the associative conceptual relations [PROCESS-RESULT].
+2. Final finishing processes of the cork stopper manufacture.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The criteria underlying the systematization of the &lt;FinalFinishingProcesses&gt; took into account the operations:
+(i) that occur on the entire surface of the cork and 
+(ii) those occurring on different parts of the surface of the cork, namely at the top and on the lateral surface</rdfs:comment>
+        <rdfs:comment xml:lang="en">There are very few definitions for each of these processes, and the few definitions drawn from the CorkCorpus only mention either the main rectification, the treatment&apos;s location or the purpose of the treatment. Therefore the reason behind the systematisation of concepts that only have 1 sub-concept, i.e.: the genus concept is the purpose of its only (if is the case) spieces concept.</rdfs:comment>
+        <rdfs:label xml:lang="en">FinalFinishingProcesses</rdfs:label>
+        <skos:altLabel xml:lang="pt">acabamento final</skos:altLabel>
+        <skos:prefLabel xml:lang="en">final finishing processes</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">processos finais de acabamento</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinalFinishingProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinalFinishingProcesses"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinalFinishingProcess"/>
+                        <owl:allValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinalFinishingProcesses"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-manufacturedCorkStopper"/>
+        <rdfs:comment xml:lang="en">&lt;FinishedStopper&gt; has 3 combinatories of &lt;FinishingProcesses&gt;, i.e:
+1. &lt;SurfaceCoatingTreatment&gt; and &lt;CostumizationTreatment&gt;
+2. &lt;SurfaceCoatingTreatment&gt; (only)
+3. &lt;CostumizationTreatment&gt; (only)
+
+This concept enables the classification of &lt;CorkStopper&gt; as &lt;FinishedStopper&gt;, when related with concepts falling under &lt;FinalFinishingProcesses&gt;. Thus, concepts are classified according to the third stage of cork stopper&apos;s manufacture:
+
+1. semi-manufactured (without ANY treatment);
+2. semi-finished (with SOME but ONLY semi-finishing treatments);
+3. finished (with SOME but ONLY final finishing treatments, after semi-finishing treatments).
+
+&lt;FinishedStopper&gt; is subsumed by &lt;Semi-finishedStopper&gt; in order to mirror a change of status; therefore, a specific individual (instance) can be described as entertaining relations along with  &lt;Semi-finishingProcesses&gt; and &lt;FinalFinishingProcesses&gt;, yet not overlapping the two states of completion. In sum, &lt;FinishedCorkStopper&gt; is a spieces of &lt;Semi-finishedCorkStopper&gt; , given the specialisation it acquires: before its state of finished, it was semi-finished. The same could apply to semi-manufactured, but since the description of the latter is differentiated by the absence of &lt;FinishingProcesses&gt;, it is thus not considered as the genus of the 3 stages.</rdfs:comment>
+        <rdfs:label xml:lang="en">FinishedStopper</rdfs:label>
+        <skos:definition xml:lang="fr">bouchon fini, prêt à l&apos;emploi.</skos:definition>
+        <skos:definition xml:lang="en">ready-to-use finished cork stopper</skos:definition>
+        <skos:definition xml:lang="pt">rolha acabada, pronta a usar.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon fini</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">finished stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha acabada</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon fini, prêt à l&apos;emploi.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">ready-to-use finished cork stopper</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishedStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">rolha acabada, pronta a usar.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: CorkCorpus | 5.1 NORM</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses">
+        <rdfs:comment xml:lang="pt">1. Este conceito serve para representar as relações conceptuais associativas [PROCESS-RESULT].
+2. Processos de acabamento da fabricação da rolha de cortiça.</rdfs:comment>
+        <rdfs:comment xml:lang="en">1.This concept serves to model the associative conceptual relations [PROCESS-RESULT].
+2. Finishing processes of the cork stopper manufacture.</rdfs:comment>
+        <rdfs:comment xml:lang="en">&lt;FinishingProcesses&gt; : the fifth axis of analysis for the definition of &lt;CorkStpper&gt;
+
+There are very few definitions for each of these processes, and the few definitions drawn from the CorkCorpus only mention either the main rectification, the treatment&apos;s location or the purpose of the treatment. This is the reason behind the systematisation of concepts that only have 1 sub-concept, i.e.: the genus concept is the purpose of its only (if is the case) spieces concept.
+
+This hierarchical systematisation of &lt;FinishingProcesses&gt; is relevant to understand what is the purpose of each process, without the need of defining each of them.</rdfs:comment>
+        <rdfs:label xml:lang="en">FinishingProcesses</rdfs:label>
+        <skos:prefLabel xml:lang="en">FinishingProcess</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFireMarkingOperation"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkinOperation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper</rdfs:label>
+        <skos:definition xml:lang="en">cork stopper entirely made of &lt;AmadiaCork&gt; that was submitted to &lt;FireMarkingOperation&gt;</skos:definition>
+        <skos:definition xml:lang="pt">rolha de cortiça totalmente feita de &lt;CortiçaAmadia&gt; que foi submetida à operação de &lt;MarcaçãoAFogo&gt;</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon de liège naturel marqué à feu</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">fire marked natural cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça natural marcada a fogo</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">cork stopper entirely made of &lt;AmadiaCork&gt; that was submitted to &lt;FireMarkingOperation&gt;</owl:annotatedTarget>
+        <skos:note xml:lang="en">&lt;AmadiaCork&gt; is a concept forseen to be added in the ontology</skos:note>
+        <skos:note xml:lang="en">Our proposal of definition</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">rolha de cortiça totalmente feita de &lt;CortiçaAmadia&gt; que foi submetida à operação de &lt;MarcaçãoAFogo&gt;</owl:annotatedTarget>
+        <skos:note xml:lang="pt">&lt;CortiçaAmadia&gt; é um conceito futuramente previsto na ontologia.</skos:note>
+        <skos:note xml:lang="pt">A nossa proposta de definição.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon de liège naturel marqué à feu</owl:annotatedTarget>
+        <skos:note xml:lang="fr">Dans le discours de spécialité, le spécialiste ne verbalize pas toutes les opérations (traitements) auxquelles le bouchon a été soumis, sauf la dernière opération qui a eu lieu. Notre proposition, dans ce cas, est d&apos;énoncer &lt;MarquageÁFeu&gt;  à l&apos;exception de &lt;Lavage&gt;; &lt;Chanfreinage&gt;; et de &lt;MarquageÁL&apos;encre&gt;, dans la forme du terme.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="en">fire marked natural cork stopper</owl:annotatedTarget>
+        <skos:note xml:lang="en">In specialised discourse context, the expert does not verbalize all the operations (treatments) that the cork stopper was submiited to, excep for the last operation that occurred. Our proposal for this case, is to explicit &lt;FireMarking&gt; but not &lt;Washing&gt;; &lt;Chamfering&gt;; and &lt;InkMarking&gt;, in the term&apos;s form.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkedInkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="pt">rolha de cortiça natural marcada a fogo</owl:annotatedTarget>
+        <skos:note xml:lang="pt">Em contexto de discurso de especialidade, o especialista não verbaliza todas as operações (tratamentos) a que a rolha foi submetida, à excepção da última operação que ocorreu. Propomos para este caso, enunciar  &lt;MarcaçãoAFogo&gt;, mas não &lt;Lavação&gt;; &lt;Chanframento&gt;; e &lt;MarcaçãoATinta&gt;, na forma do termo.</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkinOperation -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FireMarkinOperation">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CostumizationTreatment"/>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkingOperation"/>
+        <rdfs:label xml:lang="en">FireMarkingOperation</rdfs:label>
+        <skos:prefLabel xml:lang="en">fire marking</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">marcação a fogo</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">marquage à feu</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Function -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Function">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ForSparklingWines"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">1. A extensão deste conceito serve para representar a relação conceptual associativa [OBJECT - FUNCTION].
+2. As rolhas de cortiça têm como primeira função vedar garrafas. Dependendo da sua tipologia, são usadas para vedar diferentes tipos de vinho.</rdfs:comment>
+        <rdfs:comment xml:lang="en">1. The extension of this concept serves to model the associative conceptual relation [OBJECT - FUNCTION]
+2. Cork stoppers have the primary function of sealing bottles. Depending on their typology, they are used to seal different types of wine.</rdfs:comment>
+        <rdfs:label xml:lang="en">Function</rdfs:label>
+        <skos:prefLabel xml:lang="fr">fonction</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">function</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">função</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMarkingOperation"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkingOperation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">InkMarkedChamferedWashedMono-pieceNaturalCorkStopper</rdfs:label>
+        <skos:altLabel xml:lang="fr">bouchon marqué</skos:altLabel>
+        <skos:altLabel xml:lang="en">branded stopper</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha marcada</skos:altLabel>
+        <skos:definition xml:lang="en">cork stopper entirely made of &lt;AmadiaCork&gt; that was submitted to &lt;InMarkingOperation&gt;</skos:definition>
+        <skos:definition xml:lang="pt">rolha de cortiça totalmente feita de &lt;CortiçaAmadia&gt; que foi submetida à operação de &lt;MarcaçãoATinta&gt;</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon de liège naturel marqué à l&apos;encre</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">ink marked natural cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça natural marcada a tinta</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">cork stopper entirely made of &lt;AmadiaCork&gt; that was submitted to &lt;InMarkingOperation&gt;</owl:annotatedTarget>
+        <skos:note xml:lang="en">&lt;AmadiaCork&gt; is a concept forseen to be added in the ontology</skos:note>
+        <skos:note xml:lang="en">Our proposal of definition</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">rolha de cortiça totalmente feita de &lt;CortiçaAmadia&gt; que foi submetida à operação de &lt;MarcaçãoATinta&gt;</owl:annotatedTarget>
+        <skos:note xml:lang="pt">&lt;CortiçaAmadia&gt; é um conceito previsto ser acrescentado na ontologia.</skos:note>
+        <skos:note xml:lang="pt">A nossa proposta de definição.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon de liège naturel marqué à l&apos;encre</owl:annotatedTarget>
+        <skos:note xml:lang="fr">Dans le discours de spécialité, le spécialiste ne verbalize pas toutes les opérations (traitements) auxquelles le bouchon a été soumis, sauf la dernière opération qui a eu lieu. Notre proposition pour ce cas, est d&apos;énoncer &lt;MarquageÁL&apos;encre&gt;  à l&apos;exception de &lt;Lavage&gt; et de &lt;Chanfreinage&gt;, dans la forme du terme.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="en">ink marked natural cork stopper</owl:annotatedTarget>
+        <skos:note xml:lang="en">In specialised discourse context, the expert does not verbalise all the operations (treatments) that the cork stopper was submited to, except for the last operation that occurred. Our proposal for this case, is to explicit &lt;InkMarking&gt; but not &lt;Washing&gt; and &lt;Chamfering&gt;, in the term&apos;s form.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedChamferedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="pt">rolha de cortiça natural marcada a tinta</owl:annotatedTarget>
+        <skos:note xml:lang="pt">Em contexto de discurso de especialidade, o especialista não verbaliza todas as operações (tratamentos) a que a rolha foi submetida, à excepção da última operação que ocorreu. Propomos para este caso, enunciar  &lt;MarcaçãoATinta&gt;, mas não &lt;Lavação&gt; e &lt;Chanframento&gt;, na forma do termo.</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedColmatedWashedMono-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedColmatedWashedMono-pieceNaturalCorkStopper">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasInkMarkingOperation"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkingOperation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">InkMarkedColmatedWashedMono-pieceNaturalCorkStopper</rdfs:label>
+        <skos:definition xml:lang="en">Cork stopper entirely made of amadia cork that was submitted to &lt;LenticelsColmation&gt; and &lt;InkMarkinOperation&gt;.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon colmaté marqué à l&apos;encre</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">ink marked colmated cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha colmatada marcada a tinta</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Cork stopper entirely made of amadia cork that was submitted to &lt;LenticelsColmation&gt; and &lt;InkMarkinOperation&gt;.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Author - our proposal of definition</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon colmaté marqué à l&apos;encre</owl:annotatedTarget>
+        <skos:note xml:lang="fr">Dans le discours de spécialité, le spécialiste ne verbalize pas toutes les opérations (traitements) auxquelles le bouchon a été soumis, à l&apos;exception de la dernière opération qui a eu lieu. Dans ce cas, &lt;MarquageÀL&apos;encre&gt; est énoncé, mais &lt;Lavage&gt; et &lt;Colmatage&gt; ne le sont pas.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="en">ink marked colmated cork stopper</owl:annotatedTarget>
+        <skos:note xml:lang="en">In specialised discourse context, the expert does not verbalise all the operations (treatments) that the cork stopper was submitted to, with the exception of the last operation that occurred. In this case,&lt;InkMarking&gt; is explicit but not &lt;Washing&gt; and &lt;Colmation&gt;.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkedColmatedWashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="pt">rolha colmatada marcada a tinta</owl:annotatedTarget>
+        <skos:note xml:lang="pt">Em contexto de discurso de especialidade, o especialista não verbaliza todas as operações (tratamentos) a que a rolha foi submetida, à excepção da última operação que ocorreu. Neste caso, a &lt;MarcaçãoATinta&gt; está enunciada, mas não &lt;Lavação e &lt;Colmatação&gt;.</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkingOperation -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#InkMarkingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#CostumizationTreatment"/>
+        <rdfs:label xml:lang="en">InkMarkingOperation</rdfs:label>
+        <skos:prefLabel xml:lang="en">ink marking</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">marcação a tinta</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">marquage à l&apos;encre</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#LengthRectification -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#LengthRectification">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#DimensionalRectification"/>
+        <rdfs:label xml:lang="en">LengthRectification</rdfs:label>
+        <skos:prefLabel xml:lang="en">length rectification</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">rectification de la longueur</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rectificação do comprimento</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#LenticelsColmation -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#LenticelsColmation">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#QualityTreatment"/>
+        <rdfs:label xml:lang="en">LenticelsColmation</rdfs:label>
+        <skos:altLabel xml:lang="en">sealing</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">colmatage</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">colmatagem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">colmation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isPartiallyMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isPartiallyMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:onClass>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">MixedCorkStopper</rdfs:label>
+        <skos:altLabel xml:lang="fr">bouchon composite</skos:altLabel>
+        <skos:altLabel xml:lang="fr">bouchon tecnique</skos:altLabel>
+        <skos:altLabel xml:lang="en">composite stopper</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha composta</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha técnica</skos:altLabel>
+        <skos:altLabel xml:lang="en">technical cork stopper</skos:altLabel>
+        <skos:definition xml:lang="pt">Chamam-se rolhas técnicas às rolhas compostas ou mistas, isto é, resultam da colagem de dois ou mais corpos de cortiça fabricados individualmente. Algumas destas rolhas, são compostas por discos de cortiça natural, meios cilindros de cortiça natural, cilindros de cortiça aglomerada e outros corpos de diferentes formas de cortiça natural ou aglomerada.</skos:definition>
+        <skos:definition xml:lang="fr">Les bouchons techniques sont appelés bouchons composites ou mixtes, c&apos;est-à-dire qu&apos;ils résultent de la liaison de deux ou plusieurs corps en liège fabriqués individuellement. Certains de ces bouchons sont composés de disques en liège naturel, de cylindres en liège naturel, de cylindres en liège agglomérés et d&apos;autres corps de différentes formes de liège naturel ou aggloméré.</skos:definition>
+        <skos:definition xml:lang="en">Technical stoppers are referred to as composite or mixed stoppers, that is, they result from the bonding of two or more individually manufactured cork bodies. Some of these corks are composed of natural cork discs, natural cork cylinders, agglomerated cork cylinders and other bodies of different forms of natural or agglomerated cork.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon mixte</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">mixed stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha mista</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Chamam-se rolhas técnicas às rolhas compostas ou mistas, isto é, resultam da colagem de dois ou mais corpos de cortiça fabricados individualmente. Algumas destas rolhas, são compostas por discos de cortiça natural, meios cilindros de cortiça natural, cilindros de cortiça aglomerada e outros corpos de diferentes formas de cortiça natural ou aglomerada.</owl:annotatedTarget>
+        <skos:note xml:lang="pt">Source: CorkCorpus | 3.1 STUD</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">Les bouchons techniques sont appelés bouchons composites ou mixtes, c&apos;est-à-dire qu&apos;ils résultent de la liaison de deux ou plusieurs corps en liège fabriqués individuellement. Certains de ces bouchons sont composés de disques en liège naturel, de cylindres en liège naturel, de cylindres en liège agglomérés et d&apos;autres corps de différentes formes de liège naturel ou aggloméré.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Technical stoppers are referred to as composite or mixed stoppers, that is, they result from the bonding of two or more individually manufactured cork bodies. Some of these corks are composed of natural cork discs, natural cork cylinders, agglomerated cork cylinders and other bodies of different forms of natural or agglomerated cork.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopper">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The name of this concept results from the interpretation of the definitional statements within both Definition 1 and Definition 2,  in natural language, i.e. &quot;consisting of one or more glued elements&quot;; &quot;consisting of one or more pieces&quot;. 
+
+Despite all definitions in natural language for &lt;AgglomeratedCorkStopper&gt; we have analysed nevermake  explicit several parts but only one part (e.g. one body), we decided to maintain the prefix &lt;Mono-piece&gt; which derives from the dychotomy &lt;Multi-pieceAgglomeratedCorkStopper&gt; and &lt;Mono-pieceAgglomeratedCorkStopper&gt; as we mapped in CMapTools, in order to elicit the characteristic /one piece/ within the concept name &lt;Mono-pieceAgglomeratedCorkStopper&gt;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mono-pieceAgglomeratedCorkStopper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopperWithFinishingProcess -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopperWithFinishingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopperWithoutFinishingProcess"/>
+        <rdfs:comment xml:lang="en">&lt;Mono-pieceAgglomeratedCorkStopperWithFinishingProcesses&gt; and &lt;Mono-pieceAgglomeratedCorkStopperWithoutFinishingProcesses&gt; 
+are primitive concepts to help us reasoning about a &lt;Semi-manufacturedCorkStopper&gt; and distinguish the 3 stages of stoppers&apos; manufacture, i.e.:
+1. semi-manufactured cork stopper
+2. semi-finished cork stopper
+3. finished cork stopper
+
+In this case, we are describing the concept &lt;AgglomeratedCorkStopper&gt;, which is a &lt;CorkStopper&gt; composed of /one piece/ that was manufactured and then submited to some kinds of &lt;FinishingProcesses&gt;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mono-pieceAgglomeratedCorkStopperWithFinishingProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopperWithoutFinishingProcess -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopperWithoutFinishingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceAgglomeratedCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">&lt;Mono-pieceAgglomeratedCorkStopperWithFinishingProcesses&gt; and &lt;Mono-pieceAgglomeratedCorkStopperWithoutFinishingProcesses&gt; 
+are primitive concepts to help us reasoning about a &lt;Semi-manufacturedCorkStopper&gt;; and distinguish the 3 stages of stoppers&apos; manufacture, i.e.:
+1. semi-manufactured cork stopper
+2. semi-finished cork stopper
+3. finished cork stopper
+
+In this case, we are describing the concept &lt;AgglomeratedCorkStopper&gt;, which is a &lt;CorkStopper&gt; composed of /one piece/ that has just been manufactured and not yet submited to any kind of &lt;FinishingProcesses&gt;. 
+
+The complex axiom under &apos;SubClass Of&apos;:
+Mono-pieceAgglomeratedCorkStopper and (not (has FinishingProcess some FinishingProcess) allows the inference of &lt;Semi-manufacturedCorkStopper&gt; membership of this concept under description.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mono-pieceAgglomeratedCorkStopperWithoutFinishingProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopper">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Multi-pieceNaturalCorkStopper"/>
+        <rdfs:comment xml:lang="en">The differential characteristic /one piece/ is explicit in the name of the concept through the prefix &lt;Mono-&gt;.
+For the concept description, we opted to describe this characteristic through the complex axiom declared under the &apos;SubClass Of&apos;, in which the cardinality feature &apos;exactly 1&apos; serves the differentia characteristic, i.e. mono piece composition.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mono-pieceNaturalCorkStopper</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.apcor.pt/media-center/multimedia/fototeca/</rdfs:seeAlso>
+        <skos:definition xml:lang="en">Cork stopper entirely made of amadia cork
+Note: particularly used in the bottling of various types of wine</skos:definition>
+        <skos:definition xml:lang="fr">Obturateur entièrement fait de liège amadia.
+Note: est utilisé en particulier dans le bouteillage de vins de différents types</skos:definition>
+        <skos:definition xml:lang="pt">Vedante feito totalmente de cortiça amadia.
+Nota: utiliza-se particularmente no engarrafamento de vinho de vários tipos</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon de liège naturel</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">natural cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça natural</skos:prefLabel>
+        <foaf:image rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.apcor.pt/wp-content/uploads/2015/09/natural.jpg</foaf:image>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">This complex axiom serves the differential characteristic /one piece/ 
+through the cardinality feature &apos;exactly&apos; 1
+
+The existential restriction &quot;some&quot; would be equally correct, considering that it means &quot;AtLeastOne&quot;. However, we rather decided to explicit 1 part in order to elicit, on the concept&apos;s description, the differential characteristic</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Vedante feito totalmente de cortiça amadia.
+Nota: utiliza-se particularmente no engarrafamento de vinho de vários tipos</owl:annotatedTarget>
+        <skos:note xml:lang="en">Author - our proposal of definition</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopperWithFinishingProcess -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopperWithFinishingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopperWithoutFinishingProcess"/>
+        <rdfs:comment xml:lang="en">&lt;Mono-pieceNaturalCorkStopperWithFinishingProcesses&gt; and &lt;Mono-pieceNaturalCorkStopperWithoutFinishingProcesses&gt; 
+are primitive concepts to help us reasoning about a &lt;Semi-manufacturedCorkStopper&gt;; and distinguish the 3 stages of stoppers&apos; manufacture, i.e.:
+1. semi-manufactured cork stopper
+2. semi-finished cork stopper
+3. finished cork stopper
+
+In this case, we are describing the concept &lt;NaturalCorkStopper&gt;, which is a &lt;CorkStopper&gt; composed of /one piece/ that was manufactured and then submited to some kinds of &lt;FinishingProcesses&gt;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mono-pieceNaturalCorkStopperWithFinishingProcess</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopperWithFinishingProcess"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Log 29 08 2020
+
+after the experiment of turning this primitive concept into defined,
+we have observed an error attributed to the opposed concept:
+&lt;Mono-pieceNaturalCorkStopperWithoutFinishingProcess&gt; got subsumed by Nothing.
+
+Thus, the axiom was updated: the bolean &quot;only&quot; was replaced by &quot;some&quot; :
+hasFinishingProcess some FinishingProcesses</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopperWithoutFinishingProcess -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopperWithoutFinishingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopper"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">&lt;Mono-pieceNaturalCorkStopperWithFinishingProcesses&gt; and &lt;Mono-pieceNaturalCorkStopperWithoutFinishingProcesses&gt; 
+are primitive concepts to help us reasoning about a &lt;Semi-manufacturedCorkStopper&gt;; and distinguish the 3 stages of stoppers&apos; manufacture, i.e.:
+1. semi-manufactured cork stopper
+2. semi-finished cork stopper
+3. finished cork stopper
+
+In this case, we are describing the concept &lt;NaturalCorkStopper&gt;, which is a &lt;CorkStopper&gt; composed of /one piece/ that has just been manufactured and not submitted yet to any kind of &lt;FinishingProcesses&gt;. 
+
+The complex axiom under &apos;SubClass Of&apos;:
+Mono-pieceNaturalCorkStopper and (not (has FinishingProcess some FinishingProcess) permits the inference of &lt;Semi-manufacturedCorkStopper&gt; membership of this concept under descritpion.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Multi-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Multi-pieceNaturalCorkStopper">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The name of this concept results from the interpretation of the texts in both Definition 1 and Definition 2,  in natural language, i.e. &quot;consisting of one or more glued elements&quot;; &quot;consisting of one or more pieces&quot;. 
+&lt;Multi-pieceNaturalCorkStopper&gt; is therefore the opposite concept of &lt;Mono-pieceNaturalCorkStopper&gt; by differentiae dichotomy (Aristotelian approach).</rdfs:comment>
+        <rdfs:label xml:lang="en">Multi-pieceNaturalCorkStopper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShape"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isEntirelyMadeOf"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This a generic concept for &lt;CorkStoppers&gt; made of &lt;NaturalCork&gt;.
+
+There are different types of &lt;NaturalCorkStoppers&gt; , depending on their structure, i.e., the number of the compositional parts, and the &lt;FinishingProcess&gt; that they are submited to, or the total absence of the latter.
+
+For the complex axiom construct under the &apos;SubClass Of&apos;, we rather used the owl:ObjectProperty &apos;isEntirelyMadeOf&apos; instead of  &apos;isMadeOf&apos; due to the existence of other types of &lt;CorkStopper&gt; that are simultaneously partially made of &lt;NaturalCork&gt; and of &lt;AgglomeratedCork&gt;,  such as the &lt;MixedCorkStopper&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">NaturalCorkStopper</rdfs:label>
+        <skos:definition xml:lang="en">Cork stopper entirely made of natural cork.
+Note: particularly used in the bottling of various types of wine</skos:definition>
+        <skos:definition xml:lang="fr">Obturateur entièrement fait de liège naturel.</skos:definition>
+        <skos:definition xml:lang="fr">Obturateur entièrement fait de liège naturel.
+Note: est utilisé en particulier dans le bouteillage de vins de différents types</skos:definition>
+        <skos:definition xml:lang="pt">Vedante feito totalmente de cortiça natural.
+Nota: utiliza-se particularmente para o engarrafamento de vinho de vários tipos.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon en liège naturel</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">natural cork stopper</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça natural</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasShape"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isEntirelyMadeOf"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">instead of owl:ObjectProperty &apos;isMadeOf&apos; 
+we rather used &apos;isEntirelyMadeOf&apos; due to the existence of other types of &lt;CorkStopper&gt; that are simultaneously partially made of &lt;NaturalCork&gt; and of &lt;AgglomeratedCork&gt;,  such as the &lt;MixedCorkStopper&gt;
+
+some = at least one part; or several parts</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Vedante feito totalmente de cortiça natural.
+Nota: utiliza-se particularmente para o engarrafamento de vinho de vários tipos.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Author - our proposal of definition</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Parts -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Parts">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">A extensão deste conceito genérico serve para representar as relações conceptuais partitivas [PART-WHOLE]</rdfs:comment>
+        <rdfs:comment xml:lang="en">The extension of this concept serves to model the partitive conceptual relations [PART-WHOLE].</rdfs:comment>
+        <rdfs:label xml:lang="en">Parts</rdfs:label>
+        <skos:prefLabel xml:lang="en">part</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">parte</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">partie</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#QualityTreatment -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#QualityTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceTreatment"/>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SanitationTreatment"/>
+        <rdfs:label xml:lang="en">QualityTreatment</rdfs:label>
+        <skos:prefLabel xml:lang="pt">Tratamento de qualidade</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">quality treatment</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">traitement de qualité</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#SanitationTreatment -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#SanitationTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceTreatment"/>
+        <rdfs:label xml:lang="en">SanitizationTreatment</rdfs:label>
+        <skos:prefLabel xml:lang="en">sanitization treatment</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">traitement de désinfection</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">tratamento de higienização</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSemi-finishingProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSemi-finishingProcess"/>
+                        <owl:allValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-manufacturedCorkStopper"/>
+        <rdfs:comment xml:lang="en">&lt;Semi-finishedStopper&gt; can have 3 combinatories of &lt;FinishingProcesses&gt;
+1. &lt;DimensionalRectification&gt; and &lt;SurfaceTreatment&gt; 
+2. &lt;DimensionalRectification&gt; (only)
+3. &lt;SurfaceTreatment&gt; (only) 
+
+This concept allows the classification of &lt;CorkStoppers&gt; that only relate with  concepts falling under &lt;Semi-finishingProcesses&gt;. Thus, concepts are classified according to the second stage of cork stopper&apos;s manufacture:
+
+1. semi-manufactured (without ANY treatment);
+2. semi-finished (with SOME but ONLY semi-finishing treatments);
+3. finished (with SOME but ONLY final finishing treatments, after semi-finishing treatments).</rdfs:comment>
+        <rdfs:label xml:lang="en">Semi-finishedStopper</rdfs:label>
+        <skos:altLabel xml:lang="fr">semi ouvré</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">bouchon semi-fini</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha semi-acabada</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">semi-finished stopper</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishedStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget xml:lang="fr">semi ouvré</owl:annotatedTarget>
+        <skos:note xml:lang="fr">source:  http://www.planeteliege.com/tout-sur-le-liege/les-produits/le-bouchon/fabrication-des-bouchons/</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+        <rdfs:comment xml:lang="pt">1. Este conceito serve para representar as relações conceptuais associativas [PROCESS-RESULT].
+2. Processos de semi-acabamento da fabricação da rolha de cortiça.</rdfs:comment>
+        <rdfs:comment xml:lang="en">1.This concept serves to model the associative conceptual relations [PROCESS-RESULT].
+2. Semi-finishing processes of the cork stopper manufacture.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The criteria underlying the systematization of &lt;Semi-finishingProcesses&gt; took into account the location on the stopper where the operation is performed (edges; tops; total or lateral surface) and the purpose of the operation (rectifying or treating).</rdfs:comment>
+        <rdfs:comment xml:lang="en">There are very few definitions for each of these processes, and the few definitions drawn from the CorkCorpus only mention either the main rectification, the treatment&apos;s location or the purpose of the treatment. Therefore the reason behind the systematisation of concepts that only have 1 sub-concept, i.e.: the genus concept is the purpose of its only (if is the case) spieces concept.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semi-finishingProcesses</rdfs:label>
+        <skos:prefLabel xml:lang="pt">processos de semi-acabamento</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">semi-finishing processes</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Semi-manufacturedCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-manufacturedCorkStopper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">&lt;Semi-manufacturedCorkStopper&gt;  is a defined concept to reason about one of the 3 stages of cork stopper&apos;s manufacture. 
+
+The construct  : 
+not ( hasFinishingProcess some FinishingProcesses)
+
+permits to infer  &lt;Semi-manufacturedCorkStopper&gt; membership, when a &lt;CorkStopper&gt; is described in conjunction with the negation of an intersection with any type of &lt;FinishingProcesses&gt;.
+
+in order to :
+1) prevent the equivalence with &lt;Semi-finishedStopper&gt; ;
+2) infer  &lt;Semi-manufacturedCorkStopper&gt; membership when  a &lt;CorkStopper&gt; is defined with the negation:
+not ( hasFinishingProcess some FinishingProcesses)</rdfs:comment>
+        <rdfs:comment xml:lang="en">This concept enables the classification of &lt;CorkStoppers&gt; that do not relate with ANY concepts falling under &lt;FinishingProcesses&gt;. Thus, concepts are classified according to the first stage of cork stopper&apos;s manufacture:
+
+1. semi-manufactured (without ANY treatment);
+2. semi-finished (with SOME but ONLY semi-finishing treatments);
+3. finished (with SOME but ONLY final finishing treatments, after semi-finishing treatments).
+
+The option of describing this concept as a SubClassOf &lt;CorkStopper&gt; with the axiom construct : and(not(hasFinishingProcess some FinishingProcesses) instead of : and(not(FinishingProcesses))  - as we deed with its genus - has to do with the criterion of being subsumed by its genus and not inferred in equivalence with it. This would not be accurate and instead would  introduce noise in the ontology of cork stoppers proper, e.g. &lt;Semi-manufacturedCorkStopper&gt;  would subsume both concepts:
+&lt;Mono-pieceNaturalCorkStopperWithFinishingProcess&gt; and &lt;Mono-pieceNaturalCorkStopperWithoutFinishingProcess&gt; which is incongruous with its description.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semi-manufacturedCorkStopper</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-manufacturedCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#CorkStopper"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFinishingProcess"/>
+                                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Log 5: 26NOV19
+
+added &lt;Semi-manufacturedCorkStopper&gt;  as a defined class with the description: 
+CorkStopper and (not (hasFinishingProcess some FinishingProcesses)) 
+in order to :
+1) prevent the equivalence with &lt;Semi-finishedStopper&gt; ;
+2) infer  &lt;Semi-manufacturedCorkStopper&gt; membership when  a &lt;CorkStopper&gt; is defined with the negation:
+not ( hasFinishingProcess some FinishingProcesses)</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Shape -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Shape">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Conical"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#PrismaticQuadrangular"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Round"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">A extensão deste conceito serve para descrever a forma da rolha ou dos elementos da forma da rolha.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The extension of this concept serves to describe the form of the stopper or the shape of the form&apos;s elements.</rdfs:comment>
+        <rdfs:label xml:lang="en">Shape</rdfs:label>
+        <skos:prefLabel xml:lang="pt">forma</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">forme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ShapeElement -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeElement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Edge"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#LateralSurface"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">The extension of this concept serves to describe instances via Data properties.</rdfs:comment>
+        <rdfs:comment xml:lang="pt">a extensão deste conceito serve para descrever as instâncias por via das &quot;Data properties&quot;</rdfs:comment>
+        <rdfs:comment xml:lang="en">shape element</rdfs:comment>
+        <rdfs:label xml:lang="en">ShapeElement</rdfs:label>
+        <skos:prefLabel xml:lang="pt">elemento da forma</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">élément de forme</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeElement"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">ShapeElement</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">&lt;shapeElement&gt; , is a subclass of &lt;Shape&gt;, with 3 subclasses: &lt;Edge&gt;; &lt;Top&gt;; &lt;LateralSurface&gt;. This concept serves us to make explicit the location of the cork stopper, where the operation takes place.
+
+05NOV19 -- changed &lt;shapeElement&gt; onto sub-class of &lt;Thing&gt;. An Edge is not a specification of any individual of &lt;Shape&gt; {round, chamdered, ...}</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ShapeRectification -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeRectification">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#DimensionalRectification"/>
+        <rdfs:label xml:lang="en">ShapeRectification</rdfs:label>
+        <skos:prefLabel xml:lang="fr">rectification de forme</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rectificação da forma</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">shape rectification</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Substance -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Substance">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">1. A extensão deste conceito serve para repreesentar a relação conceptual associativa [MATTER/SUBSTANCE – PROPERTY].
+2. A cortiça é a matéria-prima das rolhas que povoam esta ontologia. Por questões de clareza, decidimos utilizar &quot;cortiça aglomerada&quot; em vez de &quot;granulado de cortiça aglutinado&quot; para diferenciarmos de &quot;cortiça natural&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">1.The extension of this concept serves to model the associative conceptual relationship [MATTER / SUBSTANCE - PROPERTY].
+2. Cork is the raw material of the cork stoppers that populate this ontology. For the sake of clarity, we have decided to use &quot;agglomerated cork&quot; instead of &quot;agglutinated cork granules&quot; to differentiate from &quot;natural cork&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Substance</rdfs:label>
+        <skos:note xml:lang="en">Cork is the raw material of the corks that populate this ontology. For the sake of clarity, we have decided to use &quot;agglomerated cork&quot; instead of &quot;agglutinated cork granules&quot; to differentiate from &quot;natural cork&quot;.</skos:note>
+        <skos:prefLabel xml:lang="en">substance</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">substance</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">substância</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceCoatingTreatment -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceCoatingTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FinalFinishingProcesses"/>
+        <rdfs:label xml:lang="en">FinalSurfaceTreatment</rdfs:label>
+        <skos:prefLabel xml:lang="en">final surface treatment</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">traitement final de surface</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">tratamento final de superfície</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceParaffination -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceParaffination">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceCoatingTreatment"/>
+        <owl:disjointWith rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceSiliconization"/>
+        <rdfs:label xml:lang="en">SurfaceParaffination</rdfs:label>
+        <skos:prefLabel xml:lang="fr">paraffinage</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">paraffination</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">parafinação</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceSandingOperation -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceSandingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#DiameterRectification"/>
+        <rdfs:label xml:lang="en">SurfaceSandingOperation</rdfs:label>
+        <skos:prefLabel xml:lang="fr">ponçage</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">ponçagem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">sanding</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceSiliconization -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceSiliconization">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceCoatingTreatment"/>
+        <rdfs:label xml:lang="en">SurfaceSiliconization</rdfs:label>
+        <skos:prefLabel xml:lang="fr">siliconage</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">siliconagem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">siliconization</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceTreatment -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Semi-finishingProcesses"/>
+        <rdfs:label xml:lang="en">SurfaceTreatment</rdfs:label>
+        <skos:prefLabel xml:lang="en">surface treatment</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">traitement de surface</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">tratamento de superfície</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceWashing -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceWashing">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SanitationTreatment"/>
+        <rdfs:label xml:lang="en">SurfaceWashing</rdfs:label>
+        <skos:altLabel xml:lang="pt">lavagem</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">lavage</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">lavação</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">washing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#TopPolishingOperation -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#TopPolishingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#LengthRectification"/>
+        <rdfs:label xml:lang="en">TopPolishingOperation</rdfs:label>
+        <skos:altLabel xml:lang="en">top polishing</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">rognage des bouts</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">top trimming</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">topejamento</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#TopPolishingOperation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="pt">topejamento</owl:annotatedTarget>
+        <rdfs:comment xml:lang="pt">polimento dos topos</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#WashedMono-pieceNaturalCorkStopper -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#WashedMono-pieceNaturalCorkStopper">
+        <rdfs:subClassOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Mono-pieceNaturalCorkStopperWithFinishingProcess"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasSurfaceWashing"/>
+                <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#SurfaceWashing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">WashedMono-PieceNaturalCorkStopper</rdfs:label>
+        <skos:altLabel xml:lang="pt">rolha natural lavada</skos:altLabel>
+        <skos:definition xml:lang="en">Cork stopper entirely made of amadia cork that was submitted to &lt;SurfaceWashing&gt; treatment.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon de liège naturel lavé</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha de cortiça natural lavada</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">washed natural cork stopper</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#WashedMono-pieceNaturalCorkStopper"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Cork stopper entirely made of amadia cork that was submitted to &lt;SurfaceWashing&gt; treatment.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Author - our proposal of definition</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2 -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                                <owl:onClass>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:onClass>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForSparklingWines"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasLargeCorkGranules"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">AgglomeratedCorkBodyWithNaturalCorkDiscs0+2</rdfs:label>
+        <skos:altLabel xml:lang="fr">bouchon pour champagne</skos:altLabel>
+        <skos:altLabel xml:lang="en">champagne cork stopper</skos:altLabel>
+        <skos:altLabel xml:lang="pt">rolha de champanhe</skos:altLabel>
+        <skos:definition xml:lang="fr">Context definitoire:
+Les bouchons techniques sont constitués d&apos;un corps en liège aggloméré très dense, avec des disques en liège naturel collés sur un bout - ou les deux bouts. Les bouchons techniques avec un disque sur chaque bout sont appelés bouchons techniques 1 + 1. Avec deux disques de liège naturel sur chaque bout, ils sont appelés 2 + 2 bouchons techniques, et avec deux disques sur un seul des bouts, ils sont appelés 2 + 0 bouchons techniques.</skos:definition>
+        <skos:definition xml:lang="pt">Contexto definitório:
+As rolhas técnicas são constituídas por um corpo de cortiça aglomerada, muito denso, com discos de cortiça natural colados no seu topo – ou em ambos os topos. As rolhas técnicas com um disco em cada topo são designadas rolhas técnicas 1+1. Com dois discos de cortiça natural em cada topo chamam-se rolhas técnicas 2+2, e com dois discos em apenas um dos topos chamam-se rolhas técnicas 2+0.</skos:definition>
+        <skos:definition xml:lang="en">Definitory context:
+Technical stoppers consist of a very dense agglomerated cork body, with natural cork discs glued to one top - or both tops. Technical stoppers with a disc on each top are called 1 + 1 technical stoppers. With two discs of natural cork on each top they are called 2 + 2 technical stoppers, and with two discs on only one of the tops,they are called 2 + 0 technical stoppers.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon technique 0+2</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha técnica 0+2</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">technical cork stopper 0+2</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">Context definitoire:
+Les bouchons techniques sont constitués d&apos;un corps en liège aggloméré très dense, avec des disques en liège naturel collés sur un bout - ou les deux bouts. Les bouchons techniques avec un disque sur chaque bout sont appelés bouchons techniques 1 + 1. Avec deux disques de liège naturel sur chaque bout, ils sont appelés 2 + 2 bouchons techniques, et avec deux disques sur un seul des bouts, ils sont appelés 2 + 0 bouchons techniques.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Literal translation form PT</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Contexto definitório:
+As rolhas técnicas são constituídas por um corpo de cortiça aglomerada, muito denso, com discos de cortiça natural colados no seu topo – ou em ambos os topos. As rolhas técnicas com um disco em cada topo são designadas rolhas técnicas 1+1. Com dois discos de cortiça natural em cada topo chamam-se rolhas técnicas 2+2, e com dois discos em apenas um dos topos chamam-se rolhas técnicas 2+0.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: CorkCorpus | 6.1 – REP</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Definitory context:
+Technical stoppers consist of a very dense agglomerated cork body, with natural cork discs glued to one top - or both tops. Technical stoppers with a disc on each top are called 1 + 1 technical stoppers. With two discs of natural cork on each top they are called 2 + 2 technical stoppers, and with two discs on only one of the tops,they are called 2 + 0 technical stoppers.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1 -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                                <owl:onClass>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:onClass>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFineCorkGranules"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">AgglomeratedCorkBodyWithNaturalCorkDiscs1+1</rdfs:label>
+        <skos:definition xml:lang="fr">Context definitoire:
+Les bouchons techniques sont constitués d&apos;un corps en liège aggloméré très dense, avec des disques en liège naturel collés sur un bout - ou les deux bouts. Les bouchons techniques avec un disque sur chaque bout sont appelés bouchons techniques 1 + 1. Avec deux disques de liège naturel sur chaque bout, ils sont appelés 2 + 2 bouchons techniques, et avec deux disques sur un seul des bouts, ils sont appelés 2 + 0 bouchons techniques.</skos:definition>
+        <skos:definition xml:lang="pt">Contexto definitório:
+As rolhas técnicas são constituídas por um corpo de cortiça aglomerada, muito denso, com discos de cortiça natural colados no seu topo – ou em ambos os topos. As rolhas técnicas com um disco em cada topo são designadas rolhas técnicas 1+1. Com dois discos de cortiça natural em cada topo chamam-se rolhas técnicas 2+2, e com dois discos em apenas um dos topos chamam-se rolhas técnicas 2+0.</skos:definition>
+        <skos:definition xml:lang="en">Definitory context:
+Technical stoppers consist of a very dense agglomerated cork body, with natural cork discs glued to one top - or both tops. Technical stoppers with a disc on each top are called 1 + 1 technical stoppers. With two discs of natural cork on each top they are called 2 + 2 technical stoppers, and with two discs on only one of the tops,they are called 2 + 0 technical stoppers.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon technique 1+1</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha técnica 1+1</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">technical cork stopper 1+1</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">Context definitoire:
+Les bouchons techniques sont constitués d&apos;un corps en liège aggloméré très dense, avec des disques en liège naturel collés sur un bout - ou les deux bouts. Les bouchons techniques avec un disque sur chaque bout sont appelés bouchons techniques 1 + 1. Avec deux disques de liège naturel sur chaque bout, ils sont appelés 2 + 2 bouchons techniques, et avec deux disques sur un seul des bouts, ils sont appelés 2 + 0 bouchons techniques.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Contexto definitório:
+As rolhas técnicas são constituídas por um corpo de cortiça aglomerada, muito denso, com discos de cortiça natural colados no seu topo – ou em ambos os topos. As rolhas técnicas com um disco em cada topo são designadas rolhas técnicas 1+1. Com dois discos de cortiça natural em cada topo chamam-se rolhas técnicas 2+2, e com dois discos em apenas um dos topos chamam-se rolhas técnicas 2+0.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: CorkCorpus | 6.1 – REP</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Definitory context:
+Technical stoppers consist of a very dense agglomerated cork body, with natural cork discs glued to one top - or both tops. Technical stoppers with a disc on each top are called 1 + 1 technical stoppers. With two discs of natural cork on each top they are called 2 + 2 technical stoppers, and with two discs on only one of the tops,they are called 2 + 0 technical stoppers.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs2+2 -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs2+2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasDiscGluedOn"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#isMadeOf"/>
+                                <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasStructure"/>
+                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                                <owl:onClass>
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                </owl:onClass>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFineCorkGranules"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasFunction"/>
+                        <owl:hasValue rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForSparklingWines"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">AgglomeratedCorkBodyWithNaturalCorkDiscs2+2</rdfs:label>
+        <skos:definition xml:lang="fr">Context definitoire:
+Les bouchons techniques sont constitués d&apos;un corps en liège aggloméré très dense, avec des disques en liège naturel collés sur un bout - ou les deux bouts. Les bouchons techniques avec un disque sur chaque bout sont appelés bouchons techniques 1 + 1. Avec deux disques de liège naturel sur chaque bout, ils sont appelés 2 + 2 bouchons techniques, et avec deux disques sur un seul des bouts, ils sont appelés 2 + 0 bouchons techniques.</skos:definition>
+        <skos:definition xml:lang="pt">Contexto definitório:
+As rolhas técnicas são constituídas por um corpo de cortiça aglomerada, muito denso, com discos de cortiça natural colados no seu topo – ou em ambos os topos. As rolhas técnicas com um disco em cada topo são designadas rolhas técnicas 1+1. Com dois discos de cortiça natural em cada topo chamam-se rolhas técnicas 2+2, e com dois discos em apenas um dos topos chamam-se rolhas técnicas 2+0.</skos:definition>
+        <skos:definition xml:lang="en">Definitory context:
+Technical stoppers consist of a very dense agglomerated cork body, with natural cork discs glued to one top - or both tops. Technical stoppers with a disc on each top are called 1 + 1 technical stoppers. With two discs of natural cork on each top they are called 2 + 2 technical stoppers, and with two discs on only one of the tops,they are called 2 + 0 technical stoppers.</skos:definition>
+        <skos:prefLabel xml:lang="fr">bouchon technique 2+2</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha técnica 2+2</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">technical cork stopper 2+2</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs2+2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="fr">Context definitoire:
+Les bouchons techniques sont constitués d&apos;un corps en liège aggloméré très dense, avec des disques en liège naturel collés sur un bout - ou les deux bouts. Les bouchons techniques avec un disque sur chaque bout sont appelés bouchons techniques 1 + 1. Avec deux disques de liège naturel sur chaque bout, ils sont appelés 2 + 2 bouchons techniques, et avec deux disques sur un seul des bouts, ils sont appelés 2 + 0 bouchons techniques.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs2+2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="pt">Contexto definitório:
+As rolhas técnicas são constituídas por um corpo de cortiça aglomerada, muito denso, com discos de cortiça natural colados no seu topo – ou em ambos os topos. As rolhas técnicas com um disco em cada topo são designadas rolhas técnicas 1+1. Com dois discos de cortiça natural em cada topo chamam-se rolhas técnicas 2+2, e com dois discos em apenas um dos topos chamam-se rolhas técnicas 2+0.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Source: CorkCorpus | 6.1 – REP</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs2+2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+        <owl:annotatedTarget xml:lang="en">Definitory context:
+Technical stoppers consist of a very dense agglomerated cork body, with natural cork discs glued to one top - or both tops. Technical stoppers with a disc on each top are called 1 + 1 technical stoppers. With two discs of natural cork on each top they are called 2 + 2 technical stoppers, and with two discs on only one of the tops,they are called 2 + 0 technical stoppers.</owl:annotatedTarget>
+        <skos:note xml:lang="en">Literal translation from PT</skos:note>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedAgglomeratedCorkBodyWithNaturalCorkDiscs1+1 -->
+
+    <owl:Class rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedAgglomeratedCorkBodyWithNaturalCorkDiscs1+1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#hasChamferingOperation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#EdgeChamferingOperation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">ChamferedAgglomeratedCorkBodyWithNaturalCorkDiscs1+1</rdfs:label>
+        <skos:prefLabel xml:lang="fr">bouchon tecnique 1+1 chanfreiné</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">chamfered technical cork stopper1+1</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">rolha técnica 1+1 chanfrada</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedAgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="fr">bouchon tecnique 1+1 chanfreiné</owl:annotatedTarget>
+        <skos:note xml:lang="fr">Dans le discours de spécialité, le spécialiste élide - dans le terme qui désigne ce concept - les opérations (traitements) auxquelles le liège a été soumis, à l&apos;exception de la dernière opération qui a eu lieu. Dans ce cas, &lt;Chanfreinage&gt;.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedAgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="en">chamfered technical cork stopper1+1</owl:annotatedTarget>
+        <skos:note xml:lang="en">In specialised discourse context, the expert eliminates the operations (treatments) that the cork stopper was submitted to, with the exception of the last operation that occurred. In this case, &lt;Chamfering&gt;.</skos:note>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ChamferedAgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget xml:lang="pt">rolha técnica 1+1 chanfrada</owl:annotatedTarget>
+        <rdfs:comment xml:lang="pt">Em contexto de discurso de especialidade, o especialista elide as operações (tratamentos) a que a rolha foi submetida, à excepção da última operação que ocorreu. Neste caso, o &lt;Chanframento&gt; .</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork">
+        <rdfs:label xml:lang="en">AgglomeratedCork</rdfs:label>
+        <rdfs:term xml:lang="en">agglomerated cork</rdfs:term>
+        <rdfs:term xml:lang="pt">cortiça aglomerada</rdfs:term>
+        <rdfs:term xml:lang="fr">liège aggloméré</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Body -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Body">
+        <rdfs:label xml:lang="en">Body</rdfs:label>
+        <rdfs:term xml:lang="en">body</rdfs:term>
+        <rdfs:term xml:lang="pt">corpo</rdfs:term>
+        <rdfs:term xml:lang="fr">manche</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered">
+        <rdfs:label xml:lang="en">Chamfered</rdfs:label>
+        <rdfs:term xml:lang="en">chamfered</rdfs:term>
+        <rdfs:term xml:lang="pt">chanfrada</rdfs:term>
+        <rdfs:term xml:lang="fr">chanfreiné</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Conical -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Conical">
+        <rdfs:label xml:lang="en">Conical</rdfs:label>
+        <rdfs:label xml:lang="fr">conique</rdfs:label>
+        <rdfs:term xml:lang="en">conical</rdfs:term>
+        <rdfs:term xml:lang="pt">troncocónica</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical">
+        <rdfs:label xml:lang="en">Cylindrical</rdfs:label>
+        <rdfs:term xml:lang="fr">cilindrique</rdfs:term>
+        <rdfs:term xml:lang="pt">cilíndrica</rdfs:term>
+        <rdfs:term xml:lang="en">cylindrical</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Disc -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Disc">
+        <rdfs:label xml:lang="en">Disc</rdfs:label>
+        <rdfs:term xml:lang="en">disc</rdfs:term>
+        <rdfs:term xml:lang="pt">disco</rdfs:term>
+        <rdfs:term xml:lang="fr">rondelle</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Edge -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Edge"/>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper1">
+        <OntoCork:hasFunction rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines"/>
+        <OntoCork:hasShape rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+        <OntoCork:isEntirelyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+        <OntoCork:hasFireMarkDesignValue xml:lang="en">five hal-circles reducing towards the centre until resumed to a dote</OntoCork:hasFireMarkDesignValue>
+        <OntoCork:hasInkMarkDesignValue xml:lang="en">ADEGAMÃE</OntoCork:hasInkMarkDesignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper2">
+        <OntoCork:hasFunction rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines"/>
+        <OntoCork:hasShape rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical"/>
+        <OntoCork:hasShapeElementEdge rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+        <OntoCork:isEntirelyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+        <OntoCork:hasSurfaceLenticelsValue xml:lang="en">colmated</OntoCork:hasSurfaceLenticelsValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper3">
+        <OntoCork:hasBrandMark rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMark"/>
+        <OntoCork:hasFireMark rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+        <OntoCork:hasFunction rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines"/>
+        <OntoCork:hasShape rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Cylindrical"/>
+        <OntoCork:hasShapeElementEdge rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+        <OntoCork:isEntirelyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+        <OntoCork:hasFireMarkDesignValue xml:lang="en">ADEGAMÃE</OntoCork:hasFireMarkDesignValue>
+        <OntoCork:hasSurfaceLenticelsValue xml:lang="en">colmated</OntoCork:hasSurfaceLenticelsValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper4">
+        <OntoCork:hasDiscGluedOn rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+        <OntoCork:hasDiscGluedOn rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+        <OntoCork:hasShapeElementEdge rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper5">
+        <OntoCork:hasDiscGluedOn rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+        <OntoCork:hasDiscGluedOn rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+        <OntoCork:hasShapeElementEdge rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+        <hasDiscsGluedOnTop1:Top2Value xml:lang="en">1</hasDiscsGluedOnTop1:Top2Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper6">
+        <OntoCork:hasDiscGluedOn rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+        <OntoCork:hasDiscGluedOn rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+        <OntoCork:hasShapeElementEdge rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Chamfered"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+        <hasDiscsGluedOnTop2:Top1Value xml:lang="en">2</hasDiscsGluedOnTop2:Top1Value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ExampleCorkStopper7">
+        <OntoCork:hasBrandMark rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#FireMark"/>
+        <OntoCork:hasDiscGluedOn rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+        <OntoCork:hasShapeElementEdge rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Round"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Body"/>
+        <OntoCork:hasStructure rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#Disc"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCork"/>
+        <OntoCork:isPartiallyMadeOf rdf:resource="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork"/>
+        <OntoCork:hasDiscsGluedOnTop2Value xml:lang="en">2</OntoCork:hasDiscsGluedOnTop2Value>
+        <OntoCork:hasFireMarkDesignValue xml:lang="en">Champagne</OntoCork:hasFireMarkDesignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#FireMark -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FireMark"/>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ForSparklingWines -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ForSparklingWines">
+        <rdfs:label xml:lang="en">ForSparklingWines</rdfs:label>
+        <rdfs:term xml:lang="en">for sparkling wines</rdfs:term>
+        <rdfs:term xml:lang="pt">para vinhos efervescentes</rdfs:term>
+        <rdfs:term xml:lang="fr">pour vins effervescents</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ForStillWines">
+        <rdfs:label xml:lang="en">ForStillWines</rdfs:label>
+        <rdfs:term xml:lang="en">for still wines</rdfs:term>
+        <rdfs:term xml:lang="pt">para vinhos tranquilos</rdfs:term>
+        <rdfs:term xml:lang="fr">pour vins tranquilles</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#InkMark -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#InkMark"/>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#LateralSurface -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#LateralSurface"/>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCork">
+        <rdfs:label xml:lang="en">NaturalCork</rdfs:label>
+        <rdfs:term xml:lang="pt">cortiça natural</rdfs:term>
+        <rdfs:term xml:lang="fr">liège naturel</rdfs:term>
+        <rdfs:term xml:lang="en">natural cork</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#PrismaticQuadrangular -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#PrismaticQuadrangular">
+        <rdfs:label xml:lang="en">PrismaticQuadrangular</rdfs:label>
+        <rdfs:term xml:lang="en">prismatic-quadrangular</rdfs:term>
+        <rdfs:term xml:lang="fr">prismatique quadrangulaire</rdfs:term>
+        <rdfs:term xml:lang="pt">prismática quandrangular</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Round -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Round">
+        <rdfs:label xml:lang="en">Round</rdfs:label>
+        <rdfs:term xml:lang="pt">redonda</rdfs:term>
+        <rdfs:term xml:lang="fr">ronde</rdfs:term>
+        <rdfs:term xml:lang="en">round</rdfs:term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Top1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+    
+
+
+    <!-- http://www.clunl.fcsh.unl.pt/OntoCork#Top2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkStopper"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#MixedCorkStopper"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#NaturalCorkStopper"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Closure"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#FinishingProcesses"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Function"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Parts"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Shape"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeElement"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Substance"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#DiameterRectification"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#LengthRectification"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#ShapeRectification"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs0+2"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs1+1"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#AgglomeratedCorkBodyWithNaturalCorkDiscs2+2"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Top1"/>
+            <rdf:Description rdf:about="http://www.clunl.fcsh.unl.pt/OntoCork#Top2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -10,7 +10,7 @@ OntoCork is being developed in OWL. The formal definitions are inferred from Cor
 Work carried out in the context of a PhD project funded by the [FCT](https://www.fct.pt/)- Fundação para a Ciência e Tecnologia (Portugal). Studentship no. PD/BD/113972/2015.
 
 # Publications
-Ramos, M. (2020). [Knowledge Organisation and Terminology: application to Cork](http://hdl.handle.net/10362/111722). PhD thesis. FCSH – Universidade NOVA de Lisboa; LISTIC - Unversité Savoi Mont Blanc.
+Ramos, M. (2020). [Knowledge Organisation and Terminology: application to Cork](http://hdl.handle.net/10362/111722). PhD thesis. FCSH – Universidade NOVA de Lisboa; LISTIC - Unversité Savoie Mont Blanc.
 
 Ramos. M., Costa, R. and Roche, C. (2020). [Dealing with specialized co-text in text mining: The verbal terminological collocations](https://hal.archives-ouvertes.fr/hal-02140064). Paper in Terminologica, Savoie et Connaissance, pp. 339 – 362. Chambéry : USMB. Magazine indexed to INIST (CNRS) – Institut de l’Information Scientifique et Technique (Centre National de la Recherche Scientifique).
 

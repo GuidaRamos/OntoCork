@@ -5,6 +5,8 @@ The aim is to build an e-dictionary, designed as a multilingual and multimodal p
 
 OntoCork is being developed in OWL. The formal definitions are inferred from CorkCorpus - a specialised corpus built from scratch.
 
+![OntoGraph](https://clunl.fcsh.unl.pt/wp-content/uploads/sites/12/2020/12/ontocork-1024x576.jpg)
+
 
 # Acknowledgements
 Work carried out in the context of a PhD project funded by the [FCT](https://www.fct.pt/)- Fundação para a Ciência e Tecnologia (Portugal). Studentship no. PD/BD/113972/2015.
